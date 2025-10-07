@@ -64,7 +64,7 @@ const FELLOWS: Fellow[] = [
     venture: 'WriteSmart',
     website: 'https://writesmart.ai',
     description: 'AI writing assistant for technical content. Profitable in month 6.',
-    philosophy: "Solo doesn't mean isolated. I leverage AI, automation, and community while maintaining full ownership.",
+    philosophy: "Solo doesn&apos;t mean isolated. I leverage AI, automation, and community while maintaining full ownership.",
     metrics: [
       { label: 'MRR', value: '$42K' },
       { label: 'Growth', value: '25% MoM' },
@@ -294,7 +294,7 @@ function FellowDetailModal({
               Solo Founder Philosophy
             </h3>
             <p className="text-stone-100 leading-relaxed italic">
-              "{fellow.philosophy}"
+              &ldquo;{fellow.philosophy}&rdquo;
             </p>
           </div>
 

@@ -1,0 +1,84 @@
+
+> solo-founder-club@1.0.0 dev
+> next dev --turbo
+
+ ⚠ Port 3000 is in use, trying 3001 instead.
+  ▲ Next.js 14.2.33 (turbo)
+  - Local:        http://localhost:3001
+
+ ✓ Starting...
+ ✓ Ready in 2.8s
+ ○ Compiling / ...
+ ✓ Compiled / in 11.8s
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\cryst\solo-founder-club\.next\static\development\_buildManifest.js.tmp.lbz4gq3fz'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\cryst\\solo-founder-club\\.next\\static\\development\\_buildManifest.js.tmp.lbz4gq3fz'
+}
+[Error: EPERM: operation not permitted, open 'C:\Users\cryst\solo-founder-club\.next\trace'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'C:\\Users\\cryst\\solo-founder-club\\.next\\trace'
+}
+ ⨯ uncaughtException: [Error: EPERM: operation not permitted, open 'C:\Users\cryst\solo-founder-club\.next\trace'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'C:\\Users\\cryst\\solo-founder-club\\.next\\trace'
+}
+ ⨯ uncaughtException: [Error: EPERM: operation not permitted, open 'C:\Users\cryst\solo-founder-club\.next\trace'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'C:\\Users\\cryst\\solo-founder-club\\.next\\trace'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 3.5s
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\cryst\solo-founder-club\.next\static\development\_buildManifest.js.tmp.8na5d7sj9vw'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\cryst\\solo-founder-club\\.next\\static\\development\\_buildManifest.js.tmp.8na5d7sj9vw'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\cryst\solo-founder-club\.next\static\development\_buildManifest.js.tmp.la3qcq1g5ss'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\cryst\\solo-founder-club\\.next\\static\\development\\_buildManifest.js.tmp.la3qcq1g5ss'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\cryst\solo-founder-club\.next\static\development\_buildManifest.js.tmp.0o79v6kn6a2n'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\cryst\\solo-founder-club\\.next\\static\\development\\_buildManifest.js.tmp.0o79v6kn6a2n'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\cryst\solo-founder-club\.next\static\development\_buildManifest.js.tmp.bo8oza7bkf6'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\cryst\\solo-founder-club\\.next\\static\\development\\_buildManifest.js.tmp.bo8oza7bkf6'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\cryst\solo-founder-club\.next\static\development\_buildManifest.js.tmp.9ws61gxcjte'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\cryst\\solo-founder-club\\.next\\static\\development\\_buildManifest.js.tmp.9ws61gxcjte'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\cryst\solo-founder-club\.next\static\development\_buildManifest.js.tmp.m41rgdgh2ya'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\cryst\\solo-founder-club\\.next\\static\\development\\_buildManifest.js.tmp.m41rgdgh2ya'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\cryst\solo-founder-club\.next\static\development\_buildManifest.js.tmp.z2e9e2diks'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\cryst\\solo-founder-club\\.next\\static\\development\\_buildManifest.js.tmp.z2e9e2diks'
+}
+ ✓ Compiled in 673ms
+ ✓ Compiled in 962ms
+ ✓ Compiled in 386ms
+ ✓ Compiled in 420ms

@@ -92,7 +92,7 @@ export default function Apply() {
             >
               <div>
                 <h2 className="text-h2 mb-4">Step 1: About You</h2>
-                <p className="text-stone-400">Let's start with the basics.</p>
+                <p className="text-stone-400">Let&apos;s start with the basics.</p>
               </div>
 
               <FormField
@@ -142,7 +142,7 @@ export default function Apply() {
             >
               <div>
                 <h2 className="text-h2 mb-4">Step 2: Your Venture</h2>
-                <p className="text-stone-400">Tell us what you're building.</p>
+                <p className="text-stone-400">Tell us what you&apos;re building.</p>
               </div>
 
               <FormField
@@ -172,7 +172,7 @@ export default function Apply() {
               />
 
               <FormField
-                label="Describe a system you've built to automate part of your business"
+                label="Describe a system you&apos;ve built to automate part of your business"
                 value={formData.automationExample}
                 onChange={(v) => updateFormData('automationExample', v)}
                 multiline
@@ -283,7 +283,7 @@ export default function Apply() {
               <div>
                 <h2 className="text-h1 mb-4">Application Submitted</h2>
                 <p className="text-stone-400 max-w-lg mx-auto">
-                  Thank you for applying to The Solo Founder Club. We'll review your application
+                  Thank you for applying to The Solo Founder Club. We&apos;ll review your application
                   and get back to you within 7 days.
                 </p>
               </div>
