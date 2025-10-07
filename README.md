@@ -77,11 +77,13 @@ solo-founder-club/
 ### Colors
 
 ```css
---color-bg: #0c0a09        /* Stone 950 */
---color-fg: #fafaf9        /* Stone 50 */
---color-accent: #ef4444    /* Red 500 */
---color-border: #292524    /* Stone 800 */
---color-muted: #78716c     /* Stone 500 */
+--obsidian: #0A0A0A        /* Deep black background */
+--obsidian-light: #1A1A1A  /* Lighter black for cards */
+--smoke: #F5F5F5           /* Primary text */
+--smoke-dark: #B0B0B0      /* Secondary text */
+--accent: #FF3366          /* Bold pink/red accent */
+--accent-hover: #FF1A4D    /* Accent hover state */
+--border: #2A2A2A          /* Subtle borders */
 ```
 
 ### Typography Scale
@@ -99,21 +101,40 @@ solo-founder-club/
 
 ## 🚢 Deployment
 
-### Vercel (Recommended)
+### Vercel (Recommended - Optimized)
 
+**Automatic Deployment:**
 1. Push to GitHub
-2. Import project in Vercel
-3. Deploy automatically
+2. Import project in [Vercel](https://vercel.com)
+3. Vercel auto-detects Next.js configuration
+4. Deploy with zero configuration needed
 
-### Manual Deployment
-
+**Vercel CLI:**
 ```bash
-# Build the project
-npm run build
+# Install Vercel CLI
+npm i -g vercel
 
-# The output will be in the .next folder
-# Deploy using your preferred hosting provider
+# Deploy to preview
+vercel
+
+# Deploy to production
+vercel --prod
 ```
+
+**Custom Domain Setup:**
+- Add domain in Vercel dashboard
+- Configure DNS records (automatic SSL)
+- See [DEPLOY.md](./DEPLOY.md) for detailed instructions
+
+### Performance Features
+- ✅ Edge network deployment
+- ✅ Automatic image optimization
+- ✅ Font optimization
+- ✅ Compression enabled
+- ✅ Security headers configured
+- ✅ Cache optimization
+
+For detailed deployment guide, see [DEPLOY.md](./DEPLOY.md).
 
 ## 🎯 Core Philosophy
 

@@ -9,22 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: {
-          primary: '#FAFAF8',
-          secondary: '#F5F5F3',
-        },
-        text: {
-          primary: '#0A0A0A',
-          secondary: '#6B6B6B',
-        },
-        accent: {
-          yellow: '#FFE500',
-          'yellow-hover': '#FFD000',
-        },
-        border: {
-          subtle: '#E5E5E5',
-          strong: '#0A0A0A',
-        },
+        obsidian: '#0A0A0A',
+        'obsidian-light': '#1A1A1A',
+        smoke: '#F5F5F5',
+        'smoke-dark': '#B0B0B0',
+        accent: '#FF3366',
+        'accent-hover': '#FF1A4D',
+        border: '#2A2A2A',
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'ui-sans-serif', 'system-ui'],
@@ -43,27 +34,38 @@ const config: Config = {
         '5xl': ['6rem', { lineHeight: '1' }],
       },
       animation: {
-        'fade-in': 'fadeIn 0.8s ease-out forwards',
-        'slide-up': 'slideUp 0.6s ease-out forwards',
-        'scale-in': 'scaleIn 0.4s ease-out forwards',
+        'fade-in': 'fadeIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        'slide-up': 'slideUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        'scale-in': 'scaleIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        'glow': 'glow 3s ease-in-out infinite',
+        'float': 'float 6s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         slideUp: {
-          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '0%': { transform: 'translateY(30px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
         scaleIn: {
-          '0%': { transform: 'scale(0.95)', opacity: '0' },
+          '0%': { transform: 'scale(0.96)', opacity: '0' },
           '100%': { transform: 'scale(1)', opacity: '1' },
+        },
+        glow: {
+          '0%, 100%': { opacity: '0.5' },
+          '50%': { opacity: '1' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-20px)' },
         },
       },
       transitionTimingFunction: {
-        'out-expo': 'cubic-bezier(0.19, 1, 0.22, 1)',
-        'in-expo': 'cubic-bezier(0.95, 0.05, 0.795, 0.035)',
+        'power-out': 'cubic-bezier(0.16, 1, 0.3, 1)',
+        'power-in': 'cubic-bezier(0.7, 0, 0.84, 0)',
+        'expo-out': 'cubic-bezier(0.19, 1, 0.22, 1)',
       },
     },
   },

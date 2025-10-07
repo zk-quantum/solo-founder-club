@@ -70,26 +70,39 @@ export default function Hero() {
     return () => ctx.revert()
   }, [])
 
-  const text = 'When one becomes many.'
+  const text = 'ONE BECOMES MANY'
   const words = text.split(' ')
 
   return (
     <section className="hero-section relative h-screen flex items-center justify-center overflow-hidden noise-overlay">
-      {/* Animated background */}
-      <div 
+      {/* Animated dark background */}
+      <div
         className="hero-bg absolute inset-0 opacity-100"
         style={{
-          background: 'linear-gradient(180deg, #FAFAF8 0%, #F5F5F3 100%)',
+          background: 'radial-gradient(circle at 50% 50%, #1A1A1A 0%, #0A0A0A 100%)',
           backgroundSize: '100% 200%',
           backgroundPosition: '50% 0%',
         }}
       />
 
+      {/* Accent glow */}
+      <div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] opacity-10 blur-3xl animate-glow"
+        style={{
+          background: 'radial-gradient(circle, #FF3366 0%, transparent 70%)',
+        }}
+      />
+
       {/* Content */}
       <div className="relative z-10 container-custom text-center">
+        {/* Overline */}
+        <p className="text-xs md:text-sm tracking-[0.3em] uppercase text-smoke-dark mb-8 animate-fade-in">
+          The Solo Founder Club
+        </p>
+
         <h1
           ref={titleRef}
-          className="font-display text-5xl md:text-7xl lg:text-8xl xl:text-9xl leading-none perspective-1000"
+          className="font-display text-5xl md:text-7xl lg:text-8xl xl:text-[10rem] leading-[0.9] perspective-1000 text-smoke mb-12"
         >
           {words.map((word, wordIndex) => (
             <span key={wordIndex} className="inline-block">
@@ -109,15 +122,30 @@ export default function Hero() {
           ))}
         </h1>
 
+        {/* Subheading */}
+        <p className="text-lg md:text-xl text-smoke-dark max-w-2xl mx-auto mb-12 animate-fade-in" style={{ animationDelay: '1.5s', opacity: 0 }}>
+          A digital sanctuary for the distributed founder. Where leverage meets vision.
+        </p>
+
+        {/* CTA */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: '2s', opacity: 0 }}>
+          <button className="btn-primary">
+            Apply for Membership
+          </button>
+          <button className="btn-outline">
+            Explore the Thesis
+          </button>
+        </div>
+
         {/* Scroll indicator */}
         <div
           ref={scrollIndicatorRef}
-          className="absolute bottom-12 left-1/2 -translate-x-1/2"
+          className="absolute bottom-12 left-1/2 -translate-x-1/2 opacity-0"
         >
-          <div className="w-px h-16 bg-text-secondary relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-8 bg-text-primary animate-scroll" />
+          <div className="w-px h-16 bg-border relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-8 bg-accent animate-scroll" />
           </div>
-          <p className="text-xs text-text-secondary mt-4 tracking-widest uppercase">
+          <p className="text-xs text-smoke-dark mt-4 tracking-widest uppercase">
             Scroll
           </p>
         </div>
