@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import localFont from 'next/font/local'
 import './globals.css'
 import SmoothScroll from '@/components/animations/SmoothScroll'
 import CustomCursor from '@/components/animations/CustomCursor'
@@ -11,49 +10,18 @@ const inter = Inter({
   display: 'swap',
 })
 
-const canela = localFont({
-  src: [
-    {
-      path: '../public/fonts/Canela-Light.woff2',
-      weight: '300',
-      style: 'normal',
-    },
-    {
-      path: '../public/fonts/Canela-Regular.woff2',
-      weight: '400',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-canela',
-  display: 'swap',
-  fallback: ['Georgia', 'serif'],
-})
-
-const gtSuper = localFont({
-  src: [
-    {
-      path: '../public/fonts/GTSuper-Display-Light.woff2',
-      weight: '300',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-gt-super',
-  display: 'swap',
-  fallback: ['Georgia', 'serif'],
-})
-
 export const metadata: Metadata = {
   title: 'Solo Founder Club - When One Becomes Many',
-  description: "A digital sanctuary for founders who embody the great leverage inversion—individuals who've become distributed systems.",
+  description: 'A digital sanctuary for founders who embody the great leverage inversion—individuals who have become distributed systems.',
   keywords: ['solo founder', 'AI', 'leverage', 'distributed systems', 'entrepreneurship'],
   authors: [{ name: 'Solo Founder Club' }],
   creator: 'Solo Founder Club',
   publisher: 'Solo Founder Club',
-  metadataBase: new URL('https://solofoundclub.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://solo-founder-club.vercel.app'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://solofoundclub.com',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://solo-founder-club.vercel.app',
     title: 'Solo Founder Club - When One Becomes Many',
     description: 'A digital sanctuary for founders who embody the great leverage inversion.',
     siteName: 'Solo Founder Club',
@@ -83,10 +51,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html 
-      lang="en" 
-      className={`${inter.variable} ${canela.variable} ${gtSuper.variable}`}
-    >
+    <html lang="en" className={inter.variable}>
       <body className="font-sans">
         <SmoothScroll>
           <CustomCursor />
